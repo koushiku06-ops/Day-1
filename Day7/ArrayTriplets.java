@@ -1,0 +1,18 @@
+public class ArrayTriplets {
+	public static void main(String[] args){
+		int arr[]={1,5,3,2};
+		int n=arr.length;
+		int count=0;
+		
+		for(int i=0;i<n;i++){
+			for(int j=i+1;j<n;j++){
+				for(int k=0;k<n;k++){
+					if(arr[i]+arr[j]==arr[k]&&i!=k&&j!=k){
+					count++;
+					}
+				}
+			}
+		}
+		System.out.print(count);
+	}
+}
